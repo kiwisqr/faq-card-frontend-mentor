@@ -131,7 +131,7 @@ body {
 
 @media only screen and (max-width: 500px) {
   .container {
-    margin-top: 80px;
+    height: 490px;
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160,12 +160,14 @@ body {
     display: none;
   }
   .second-half {
-    margin-top: 10px;
+    margin-top: 70px;
   }
   .second-half-box {
     padding: 3px;
   }
   .second-half h1 {
+    margin-top: 10px;
+    margin-bottom: 3px;
     text-align: center;
     font-size: 40px;
   }
