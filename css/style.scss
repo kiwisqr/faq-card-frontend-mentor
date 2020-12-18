@@ -117,8 +117,8 @@ body {
 @media only screen and (max-width: 500px) {
   .container {
     // margin-top: 80px;
-    height: 490px;
-    width: 90%;
+    height: 470px;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -131,9 +131,9 @@ body {
     background-image: none;
     
     &-womenillustration{
-      display: flex;
+      display: block;
       position: absolute;
-      top: 20px;
+      top: 32px;
       left: 60px;
     }
 
@@ -149,14 +149,26 @@ body {
     margin-top: 70px;
 
     &-box {
-      padding: 3px;
+      padding: 3px;   
+    }
+
+    &-accordion {
+        
+      font-size: 13px;
+    }
+
+    &-panel {
+
+      p {
+        font-size: 11px;
+        line-height: 1.4;
+      }
     }
 
     h1 {
       margin-top: 10px;
       margin-bottom: 3px;
       text-align: center;
-      font-size: 40px;
     }
   }
 }

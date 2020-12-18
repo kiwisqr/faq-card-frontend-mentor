@@ -131,8 +131,8 @@ body {
 
 @media only screen and (max-width: 500px) {
   .container {
-    height: 490px;
-    width: 90%;
+    height: 470px;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,11 +149,9 @@ body {
     background-image: none;
   }
   .first-half-womenillustration {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     position: absolute;
-    top: 20px;
+    top: 32px;
     left: 60px;
   }
   .first-half-boximg img {
@@ -165,11 +163,17 @@ body {
   .second-half-box {
     padding: 3px;
   }
+  .second-half-accordion {
+    font-size: 13px;
+  }
+  .second-half-panel p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
   .second-half h1 {
     margin-top: 10px;
     margin-bottom: 3px;
     text-align: center;
-    font-size: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
