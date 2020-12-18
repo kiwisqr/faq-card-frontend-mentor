@@ -40,12 +40,12 @@ body {
           align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 55%;
+  width: 50%;
   height: 550px;
   background-color: #ffffff;
   background-image: url(/images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-position: bottom 80px left -500px;
+  background-position: bottom -120px left -580px;
   border-radius: 30px;
 }
 
@@ -53,13 +53,26 @@ body {
   height: 100%;
   background-image: url(/images/illustration-woman-online-desktop.svg);
   background-repeat: no-repeat;
-  background-position: center left -100px;
+  background-position: center left -80px;
+}
+
+.first-half-womenillustration {
+  display: none;
+}
+
+.first-half-boximg {
+  position: absolute;
+  top: 45%;
+  left: 370px;
 }
 
 .second-half {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 80%;
+  margin-left: 10px;
+}
+
+.second-half h1 {
+  color: var(--very-dark-desaturated-blue);
 }
 
 .second-half-box {
@@ -77,11 +90,17 @@ body {
   transition: 0.4s;
   text-align: left;
   width: 100%;
+  color: var(--very-dark-grayish-blue);
 }
 
 .second-half-accordion:hover {
   color: var(--soft-red);
-  font-weight: 400;
+}
+
+.second-half-accordion:focus {
+  font-weight: bold;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .second-half-accordion:after {
@@ -99,6 +118,7 @@ body {
 .second-half-panel p {
   margin-top: 0;
   font-size: 13px;
+  color: var(--dark-grayish-blue);
 }
 
 .active:after {
@@ -107,5 +127,47 @@ body {
           transform: rotate(180deg);
   -webkit-transition: 0.1s ease-out;
   transition: 0.1s ease-out;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin-top: 80px;
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .first-half {
+    background-image: none;
+  }
+  .first-half-womenillustration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+  }
+  .first-half-boximg img {
+    display: none;
+  }
+  .second-half {
+    margin-top: 10px;
+  }
+  .second-half-box {
+    padding: 3px;
+  }
+  .second-half h1 {
+    text-align: center;
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
