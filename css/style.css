@@ -61,9 +61,14 @@ body {
 }
 
 .first-half-boximg {
+  display: block;
+  position: relative;
+}
+
+.first-half-boximg img {
   position: absolute;
-  top: 45%;
-  left: 370px;
+  top: 235px;
+  left: -100px;
 }
 
 .second-half {
@@ -178,6 +183,30 @@ body {
     margin-top: 10px;
     margin-bottom: 3px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1750px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1253px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .container {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
