@@ -149,10 +149,13 @@ body {
     background-image: none;
   }
   .first-half-womenillustration {
-    display: block;
+    display: inline;
+    position: relative;
+  }
+  .first-half-womenillustration img {
     position: absolute;
-    top: 32px;
-    left: 60px;
+    top: -110px;
+    left: -10px;
   }
   .first-half-boximg img {
     display: none;

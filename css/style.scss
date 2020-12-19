@@ -131,10 +131,17 @@ body {
     background-image: none;
     
     &-womenillustration{
-      display: block;
-      position: absolute;
-      top: 32px;
-      left: 60px;
+      display: inline;
+      // background-color: chartreuse;
+      // width: 100px;
+      // height: 20px;
+      position: relative;
+      
+      img {
+        position: absolute;
+        top: -110px;
+        left: -10px;
+      }
     }
 
     &-boximg {
