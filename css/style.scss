@@ -20,7 +20,7 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
   height: 100vh;
-  display: grid;
+  display: flex;
   align-items: center;
 }
 
@@ -122,6 +122,7 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  
   .container {
     margin-top: 50px;
     height: 470px;
@@ -138,10 +139,7 @@ body {
     background-image: none;
     
     &-womenillustration{
-      display: inline;
-      // background-color: chartreuse;
-      // width: 100px;
-      // height: 20px;
+      display: block;
       position: relative;
       
       img {
@@ -187,28 +185,33 @@ body {
   }
 }
 
-// @media only screen and (max-width: 1750px) {
-//   .container {
-//     width: 60%;
-//   }
-// }
+@media only screen and (max-width: 380px) {
+  .container {
+    width: 92%;
+  }
+}
 
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
 
-// @media only screen and (max-width: 1450px) {
-//   .container {
-//     width: 70%;
-//   }
-// }
+@media only screen and (min-width: 1095px) {
+  .container {
+    width: 80%;
+  }
+}
 
-// @media only screen and (max-width: 1253px) {
-//   .container {
-//     width: 80%;
-//   }
-// }
+@media only screen and (min-width: 1253px) {
+  .container {
+    width: 70%;
+  }
+}
 
-// @media only screen and (max-width: 1095px) {
-//   .container {
-//     width: 90%;
-//   }
-// }
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 50%;
+  }
+}
 

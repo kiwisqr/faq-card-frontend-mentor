@@ -23,8 +23,9 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(var(--soft-violet)), to(var(--soft-blue)));
   background: linear-gradient(to bottom, var(--soft-violet), var(--soft-blue));
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -155,7 +156,7 @@ body {
     background-image: none;
   }
   .first-half-womenillustration {
-    display: inline;
+    display: block;
     position: relative;
   }
   .first-half-womenillustration img {
@@ -183,6 +184,36 @@ body {
     margin-top: 10px;
     margin-bottom: 3px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .container {
+    width: 92%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1095px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1253px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .container {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
